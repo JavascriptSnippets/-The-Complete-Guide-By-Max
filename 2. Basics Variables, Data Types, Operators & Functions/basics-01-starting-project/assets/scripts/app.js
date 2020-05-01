@@ -3,7 +3,13 @@ let currentResult = defaultResult;
 
 addBtn.addEventListener("click", add);
 
+function getUserNumberEntered() {
+  return parseInt(userInput.valuel);
+}
+
 function add() {
-  currentResult = currentResult + parseInt(userInput.value);
-  outputResult(currentResult, "");
+  const enertedNumber = getUserNumberEntered();
+  const calcDescription = `${currentResult} + ${enertedNumber}`;
+  currentResult = currentResult + parseInt(enertedNumber);
+  outputResult(currentResult, calcDescription);
 }
