@@ -1,9 +1,9 @@
 const defaultResult = 0;
 let currentResult = defaultResult;
 
-addBtn.addEventListener('click', add);
+addBtn.addEventListener("click", add);
 
 function add() {
-    currentResult = currentResult + userInput.value;
-    outputResult(currentResult, '');
+  currentResult = currentResult + parseInt(userInput.value);
+  outputResult(currentResult, "");
 }
