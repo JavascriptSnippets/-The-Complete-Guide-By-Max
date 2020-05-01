@@ -13,28 +13,28 @@ function getUserNumberEntered() {
 function add() {
     const enertedNumber = getUserNumberEntered();
     const initialResult = currentResult;
-    currentResult = currentResult + parseInt(enertedNumber);
+    currentResult += enertedNumber;
     createAndWriteOutput("+", initialResult, enertedNumber);
 }
 
 function multiply() {
     const enertedNumber = getUserNumberEntered();
     const initialResult = currentResult;
-    currentResult = currentResult * parseInt(enertedNumber);
+    currentResult *= enertedNumber;
     createAndWriteOutput("*", initialResult, enertedNumber);
 }
 
 function subtract() {
     const enertedNumber = getUserNumberEntered();
     const initialResult = currentResult;
-    currentResult = currentResult - parseInt(enertedNumber);
+    currentResult -= enertedNumber;
     createAndWriteOutput("-", initialResult, enertedNumber);
 }
 
 function divide() {
     const enertedNumber = getUserNumberEntered();
     const initialResult = currentResult;
-    currentResult = currentResult / parseInt(enertedNumber);
+    currentResult /= enertedNumber;
     createAndWriteOutput("/", initialResult, enertedNumber);
 }
 
